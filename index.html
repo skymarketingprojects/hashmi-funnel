@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hashmi Infra Build</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Hero Section -->
+    <section class="hero">
+      <img src="images/logo.webp" alt="Logo" class="logo" />
+      <h1>Hashmi Infra Build</h1>
+      <p>
+        Affordable Luxury, Complete Interior Solutions from
+        <strong> ₹3 Lakh </strong> Onwards
+      </p>
+      <button class="btn red" onclick="openForm()">Book An Appointment</button>
+      <video
+        src="images/intro.mp4"
+        class="intro-video"
+        autoplay
+        muted
+        loop
+      ></video>
+    </section>
+
+    <!-- Company Info Section -->
+    <section class="info">
+      <h2>
+        15+ Years of Nationwide Excellence in Interior, Exterior & Architectural
+        Design
+      </h2>
+      <p>
+        Hashmi Infrabuild is a trusted Indian company delivering
+        budget-friendly, innovative design & construction solutions for homes,
+        offices, and commercial spaces—powered by an expert in-house team and
+        projects executed across India.
+      </p>
+    </section>
+
+    <!-- Cards Section -->
+    <section class="cards-section">
+      <div class="card">
+        <img src="images/hashmicard2.webp" alt="Office Design" />
+        <div class="card-content">
+          <h3>Residential Interior Design That Feels Like Home</h3>
+          <p>
+            From apartments to villas, we specialize in designing and delivering
+            stunning residential spaces tailored to your lifestyle — now serving
+            happy homeowners across the nation.
+          </p>
+          <p>
+            With 15+ years of residential expertise, Hashmi Infra brings elegant
+            interiors, smart layouts, and lasting quality to homes across India.
+          </p>
+          <button class="btn red" onclick="openForm()">
+            Appointment for Commercial
+          </button>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="images/hashmicard1.webp" alt="Office Design" />
+        <div class="card-content">
+          <h3>Commercial Interior Design That Works as Hard as You Do</h3>
+          <p>
+            From modern offices to vibrant retail spaces, our commercial
+            interiors are crafted to boost performance, reflect your identity,
+            and deliver an unforgettable customer experience on time, every
+            time.
+          </p>
+          <p>
+            With 15+ years of expertise, Hashmi Infra turns commercial spaces
+            into business assets stylish, functional, and fully aligned with
+            your goals.
+          </p>
+          <p>
+            We blend space planning, design strategy, and architectural finesse
+            to create commercial spaces that connect with clients and motivate
+            employees.
+          </p>
+          <button class="btn red" onclick="openForm()">
+            Appointment for Commercial
+          </button>
+        </div>
+      </div>
+
+      <!-- Duplicate this card div for more cards -->
+
+      <button class="btn red bottom-cta" onclick="openForm()">
+        Book An Appointment and Get Best Offer
+      </button>
+    </section>
+
+    <!-- Form Popup -->
+    <div class="form-popup" id="popupForm">
+      <form
+        action="https://formspree.io/f/your-form-id"
+        method="POST"
+        class="popup-form"
+      >
+        <h2>Book an Appointment</h2>
+
+        <input
+          class="form-input"
+          type="text"
+          name="first_name"
+          placeholder="First Name"
+          required
+        />
+        <input
+          class="form-input"
+          type="tel"
+          name="phone"
+          placeholder="Phone *"
+          required
+        />
+        <input
+          class="form-input"
+          type="email"
+          name="email"
+          placeholder="Email *"
+          required
+        />
+        <input class="form-input" type="text" name="city" placeholder="City" />
+
+        <label class="budget-label">What's your Budget?</label>
+        <div class="checkbox-group">
+          <label
+            ><input type="checkbox" name="budget" value="6 Lakh" /> 6
+            Lakh</label
+          >
+          <label
+            ><input type="checkbox" name="budget" value="10 Lakh" /> 10
+            Lakh</label
+          >
+          <label
+            ><input type="checkbox" name="budget" value="More than 10 Lakh" />
+            More than 10 Lakh</label
+          >
+        </div>
+
+        <div class="form-actions">
+          <button type="submit" class="btn red full">Submit</button>
+          <button type="button" class="btn outline" onclick="closeForm()">
+            Close
+          </button>
+        </div>
+      </form>
+    </div>
+
+    <!-- Projects Gallery Section -->
+    <section class="projects">
+      <h2>Our Projects</h2>
+      <div class="gallery">
+        <img src="images/gallery1.webp" alt="Project 1" />
+        <img src="images/gallery2.webp" alt="Project 2" />
+        <img src="images/gallery3.webp" alt="Project 3" />
+        <img src="images/gallery4.webp" alt="Project 4" />
+        <img src="images/gallery5.webp" alt="Project 5" />
+        <img src="images/gallery6.webp" alt="Project 6" />
+        <img src="images/gallery7.webp" alt="Project 7" />
+        <img src="images/gallery8.webp" alt="Project 8" />
+      </div>
+      <button class="btn red bottom-cta" onclick="openForm()">
+        Book An Appointment
+      </button>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <p>© 2025 Hashmi Infra Build. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Mobile Sticky CTA -->
+    <button class="mobile-cta" onclick="openForm()">
+      Book Your Appointment
+    </button>
+    <div id="formNotification" class="form-notification"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
