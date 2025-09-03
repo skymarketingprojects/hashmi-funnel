@@ -241,7 +241,7 @@ h1, h2, h3 {
 
 .checkbox-group label {
   display: flex;
-  align-items: center;
+  align-items: baseline;
   gap: 8px;
   font-size: 14px;
   margin-bottom: 8px;
